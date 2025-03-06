@@ -5,7 +5,7 @@ node_modules/
 server/public/output.css
 
 # Environment variables
-.env
+.ENV
 
 # Logs
 logs/
