@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <main>
-        <h2><%= article.title %></h2>
+        <div class="details-wrapper">
+        <h2 class="h2-detail"><%= article.title %></h2>
         <p><%= article.content %></p>
-        <p><em>Gepubliceerd op: <%= article.date %></em></p>
+        <% if (article.image) { %>
+            <img src="<%= article.image %>" alt="<%= article.title %>">
+        <% } %>
+        </div>
     </main>
 </body>
 </html>

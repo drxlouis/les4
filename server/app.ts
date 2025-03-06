@@ -18,6 +18,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/", routes);
 
+
+
 // Server starten
 app.listen(PORT, (): void => {
   console.log(`Server draait op http://localhost:${PORT}`);
