@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Voeg Nieuws Toe</title>
+</head>
+<body>
+        <h2>Voeg Nieuws Toe</h2>
+        <form class="form-add" action="/add" method="POST">
+            <label for="title">Titel:</label>
+            <input type="text" id="title" name="title" required>
+            <br>
+            <label for="content">Inhoud:</label>
+            <textarea id="content" name="content" required></textarea>
+            <br>
+            <label for="date">Datum:</label>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <button type="submit">Voeg Toe</button>
+        </form>
+    </main>
+</body>
+</html>

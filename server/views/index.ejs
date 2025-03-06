@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <main class="p-4">
+        <a href="/add" class="btn-add">Voeg nieuws toe</a>
+        <ul class="space-y-2">
+            <% news.forEach(article => { %>
+                <li>
+                    <a href="/nieuws/<%= article.slug %>" class="article">
+                        <%= article.title %>
+                    </a>
+                </li>
+            <% }) %>
+        </ul>
+    </main>
+</body>
+</html>
